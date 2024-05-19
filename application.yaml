@@ -1,5 +1,7 @@
 spring:
   datasource:
+    username: user
+    password: user
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
