@@ -2,15 +2,15 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: product-service
-          uri: lb://product-service
+        - id: product
+          uri: lb://product
           predicates:
-            - Path=/product-service/**
+            - Path=/product/**
           filters:
             - StripPrefix=1
-        - id: order-service
-          uri: lb://order-service
+        - id: order
+          uri: lb://order
           predicates:
-            - Path=/order-service/**
+            - Path=/order/**
           filters:
             - StripPrefix=1
