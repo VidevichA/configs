@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://order_db:5432/order_db
+  rabbitmq:
+    host: localhost
+    virtual-host: vhost
+    password: guest
+    username: guest
