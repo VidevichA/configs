@@ -2,4 +2,4 @@ spring:
   main:
     allow-bean-definition-overriding: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/inventory_db
+    url: jdbc:postgresql://inventory_db:5432/inventory_db

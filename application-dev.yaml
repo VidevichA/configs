@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: user
+    password: user
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+eureka:
+  client:
+    prefer-same-zone-eureka: true
+    instance-info-replication-interval-seconds: 2
+    service-url:
+      defaultZone: http://discovery:8761/eureka
+  instance:
+    prefer-ip-address: true
