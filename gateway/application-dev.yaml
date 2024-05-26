@@ -6,6 +6,8 @@ spring:
           uri: lb://product
           predicates:
             - Path=/product/**
+          filters:
+            - StripPrefix=1
         - id: order
           uri: lb://order
           predicates:
