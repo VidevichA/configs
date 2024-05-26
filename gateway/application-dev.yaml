@@ -19,3 +19,9 @@ spring:
             - Path=/order/**
           filters:
             - StripPrefix=1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
