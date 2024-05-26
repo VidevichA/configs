@@ -1,0 +1,15 @@
+eureka:
+  instance:
+    hostname: localhost
+    metadata-map:
+      zone: zone1
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    region: region1
+    serviceUrl:
+      zone1: http://discovery:8761/eureka/
+    availability-zones:
+      region1: zone1
+  server:
+    renewal-percent-threshold: 0.85
