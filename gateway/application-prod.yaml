@@ -2,11 +2,6 @@ spring:
   main:
     web-application-type: reactive
     allow-bean-definition-overriding: true
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://keycloak:9080/realms/realm
   cloud:
     gateway:
       routes:

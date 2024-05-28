@@ -11,7 +11,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:9080/realms/realm
+          issuer-uri: http://keycloak:8080/realms/realm
 eureka:
   client:
     prefer-same-zone-eureka: true
