@@ -17,6 +17,12 @@ spring:
             - Path=/order/**
           filters:
             - StripPrefix=1
+        - id: inventory
+          uri: lb://=inventory
+          predicates:
+            - Path=/=inventory/**
+          filters:
+            - StripPrefix=1
 
 management:
   endpoints:
