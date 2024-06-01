@@ -31,9 +31,9 @@ spring:
                 redis-rate-limiter.requestedTokens: 1
             - StripPrefix=1
         - id: inventory
-          uri: lb://=inventory
+          uri: lb://inventory
           predicates:
-            - Path=/=inventory/**
+            - Path=/inventory/**
           filters:
             - name: RequestRateLimiter
               args:
