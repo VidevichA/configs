@@ -2,6 +2,10 @@ spring:
   main:
     web-application-type: reactive
     allow-bean-definition-overriding: true
+  data:
+    redis:
+      host: redis
+      port: 6379
   cloud:
     gateway:
       routes:
