@@ -8,7 +8,7 @@ spring:
         - id: product
           uri: lb://product
           predicates:
-            - Path=/product1/**
+            - Path=/product/**
           filters:
             - name: RequestRateLimiter
               args:
