@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
         - id: product
-          uri: lb://product
+          uri: lb://product1
           predicates:
             - Path=/product/**
           filters:
