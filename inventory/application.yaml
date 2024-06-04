@@ -1,0 +1,8 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    virtual-host: /
+    username: guest
+    password: guest
+    port: 5672
