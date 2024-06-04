@@ -4,6 +4,8 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://keycloak:8080/realms/realm
+  rabbitmq:
+    addresses: rabbitmq
 eureka:
   client:
     service-url:
